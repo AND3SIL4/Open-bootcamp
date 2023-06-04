@@ -25,7 +25,6 @@ public class Main {
     }
 
     // Bucle con while
-
     public static void bucle(){
         System.out.println("Ejercicio de bucles con while...");
         int numeroWhile = 0;
@@ -46,7 +45,6 @@ public class Main {
         } while (number < 3);
     }
     // Bucle con for
-
     public static void bucleFor (){
         System.out.println("Bucle con for");
 
