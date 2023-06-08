@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #161717;
+  color: white;
+}
+*::selection{
+  background-color: lightcoral;
+}
+.google img{
+  height: 33px;
+  width: 33px;
+  margin-left: 1px;
+}
+.google{
+  border-radius: 5px;
+  padding: 2px;
+  width: 200px;
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(26,115,232) ;
+}
+.google:hover{
+  opacity: 0.8;
+}
+.button_google{
+  color: white;
+  background-color: transparent;
+  padding: 2px;
+  border: none;
+  height: 33px;
+  width: 165px;
+}
+img{
+  width: 30px;
+}
+.auth{
+  gap: 20px;
+  width: 100%;
+  display: flex;
+}
+.twitter button{
+  border: none;
+  background-color:rgb(242,242,242) ;
+  border-radius: 5px;
+  height: 38px;
+  width: 50px;
+  opacity: 0.8;
+}
+.twitter button img{
+  scale: 0.5;
+}
+.twitter button:hover{
+  opacity: 1;
+}
+form input[type='password']:hover,[type='text']:hover, [type='email']:hover{
+  background-color: #454045;
+  border: solid 1px lightgray;
+  box-shadow: 0 0 3px rgb(234,76,137);
+}
+input:focus{
+  background-color: #454045;
+  border: solid 1px lightgray;
+  box-shadow: 0 0 5px #454045;
+}
+input[type='password'],[type='text'], [type='email']{
+  outline: none;
+  font-size: 14px;
+  padding: 15px;
+  height: 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #212121;
+}
+.credenciales{
+  display: flex;
+  justify-content: space-between;
+}
+.correo, .nombre, .user-name, .contrasena{
+  display: flex;
+  flex-direction: column;
+}
+.nombre, .user-name{
+  position: relative;
+  width: 180px;
+}
+input[type='checkbox']{
+  background-color: white;
+  border: solid 1px purple;
+  appearance: none;
+  border-radius: 0;
+  width: 20px;
+  height: 20px;
+}
+input[type='checkbox']:checked{
+  background-color: blueviolet;
+}
+form button{
+  border: none;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: rgb(234,76,137);
+}
+form button:hover{
+  opacity: 0.8;
+}
+.login div{
+  margin: 2rem 0;
+}
+.login{
+  margin: 5rem 15rem;
+  gap: 10px;
+  padding: 30px;
+  width: 416px;
+}
+.radio{
+  display: flex;
+  gap: 10px;
+}
+body{
+  display: flex;
+}
+.imagen img{
+  margin: 0%;
+  height: 100vh;
+  width: 40rem;
+}
+.line{
+  color: lightgray;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hr{
+  border: solid 1px lightgray;
+  flex-grow: 1;
+}
