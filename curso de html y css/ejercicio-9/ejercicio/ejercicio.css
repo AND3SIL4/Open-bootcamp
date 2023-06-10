@@ -1,0 +1,23 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+button{
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  width: 200px;
+  height: 60px;
+  color: rgb(214, 213, 213);
+  background-color: gray;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+button:hover{
+  transform: translate(0px, -5px);
+  box-shadow: 0 0 10px darkgray;
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
