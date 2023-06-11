@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos de Interés en Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h6 fw-light">primera seccion</h1>
+      <div class="bg-light p-5 rounded-3 mt-4">
+        <div class="container-fluid">
+          <h1 class="fw-bold display-5">Custom jumbotron</h1>
+          <p class="col-md-8 fs-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ducimus
+            sunt adipisci exercitationem? Quaerat itaque aliquam tempora animi
+            magni aut possimus dolorem commodi, repellendus sit tempore facilis
+            maiores illo ratione.
+          </p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Exapmple button
+          </button>
+          <div class="modal fade" data-bs-backdrop="static" id="exampleModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">
+                    This is the header
+                  </h1>
+                  <button type="button" class="btn-close"data-bs-dismiss="modal" aria-label="Close" ></button>
+                </div>
+                <div class="modal-body">
+                  This is the body
+                </div>
+                <div class="modal-footer d-flex justify-content-evenly">
+                  <button class="btn btn-danger"data-bs-dismiss="modal" >Cerrar</button>
+                  <button class="btn btn-primary" >Rregistrarse</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h6 class="fw-light">Second section</h6>
+      <div>
+        <form action="" method="">
+          <label class="form-label" for="name">Nombre</label>
+          <input class="form-control" type="text" id="name" aria-describedby="nameHere">
+          <div class="form-text" id="nameHere">Enter your name here</div>
+          <label class="form-label" for="phone">Telefono</label>
+          <input class="form-control" type="number" id="phone" aria-describedby="numberPhone">
+          <div class="form-text" id="numberPhone">Enter your number phone here</div>
+          <label class="form-label" for="message">Mensaje</label>
+          <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
+        </form>
+      </div>
+      <hr />
+      <h6 class="fw-light">Tercera seccion</h6>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?cs=srgb&dl=pexels-pixabay-36717.jpg&fm=jpg" alt="image" class="img-fluid card-img-top" >
+        <div class="card-header">
+          <h3>Andres Felipe Silva</h3>
+          <p>Analista y desarrollador de software</p>
+        </div>
+        <div class="card-body">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsam fugiat, eaque tenetur, quae dolor nam, est eius officia iste modi odit dicta optio molestias. Fuga ullam enim neque amet.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis ducimus nam corrupti vel quasi cumque exercitationem fugiat quia non tempora. Sit, beatae? At dignissimos quibusdam asperiores dolorum eum placeat distinctio.</p>
+        </div>
+        <div class="card-footer d-flex justify-content-end p-3">
+          <a href="#">and3felipe@gmail.com</a>
+        </div>
+      </div>
+      
+
+
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

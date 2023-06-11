@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilos del menú */
+    ul.menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+    }
+
+    ul.menu li {
+      display: block;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    ul.menu li:hover {
+      background-color: #ddd;
+    }
+
+    /* Estilos del contenido */
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li onclick="mostrarContenido('opcion1')">Opción 1</li>
+    <li onclick="mostrarContenido('opcion2')">Opción 2</li>
+    <li onclick="mostrarContenido('opcion3')">Opción 3</li>
+  </ul>
+
+  <div class="content">
+    <div id="opcion1" style="display: none;">
+      <h2>Contenido de la opción 1</h2>
+      <p>Texto e información de la opción 1.</p>
+    </div>
+    <div id="opcion2" style="display: none;">
+      <h2>Contenido de la opción 2</h2>
+      <p>Texto e información de la opción 2.</p>
+    </div>
+    <div id="opcion3" style="display: none;">
+      <h2>Contenido de la opción 3</h2>
+      <p>Texto e información de la opción 3.</p>
+    </div>
+  </div>
+  <div>
+    <input 
+    type="text"
+    placeholder="Hola"
+    
+    >
+  </div>
+
+  <script>
+    function mostrarContenido(opcion) {
+      // Ocultar todos los contenidos
+      var contenidos = document.getElementsByClassName('content')[0].children;
+      for (var i = 0; i < contenidos.length; i++) {
+        contenidos[i].style.display = 'none';
+      }
+
+      // Mostrar el contenido correspondiente a la opción seleccionada
+      document.getElementById(opcion).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
