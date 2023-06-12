@@ -1,0 +1,7 @@
+$text-color: rgb(222, 20, 20);
+
+@mixin formato-texto{
+  color: $text-color;
+  text-transform: uppercase;
+  font-size: 20px;
+}

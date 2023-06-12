@@ -1,0 +1,21 @@
+.btn, .btn-2, a {
+  border: none;
+  padding: 1rem;
+  color: black;
+  border: solid 1px gray;
+  border-radius: 5px;
+  width: 300px;
+  color: rgb(222, 20, 20);
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.btn:hover, .btn-2:hover, a:hover {
+  background-color: green;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.btn-2, a {
+  color: green;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
