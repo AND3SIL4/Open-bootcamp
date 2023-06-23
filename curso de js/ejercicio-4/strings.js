@@ -1,0 +1,11 @@
+let names = "Andres Felipe";
+let lastname = "Silva";
+let student = `${names} ${lastname}`;
+let studentMayus = `${names} ${lastname}`.toUpperCase();
+let studentMinus = `${names} ${lastname}`.toLowerCase();
+let studentLengt = student.length;
+let studentWordStart = names[0];
+let studentWordEnd = lastname[student.length - 1];
+let studentSpace = student.replace(/\s/g, "");
+let boolean = student.includes(names);
+console.log(boolean);
