@@ -58,3 +58,14 @@ do {
   num1++
 } while (num1 < num2);
 
+// ejercicio factorial
+
+function factorial(numbero) {
+  let factorial = 1;
+  for (let i = 2; i <= numbero; i++){
+    factorial *= i;
+  }
+  return factorial;
+}
+console.log(factorial(4));
+

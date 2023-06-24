@@ -1,4 +1,4 @@
-const logger = require('./logger/loggers');
+const logger = require("./logger/loggers");
 
 // logger.info("Este es un mensaje de informacion...")
 // logger.debug("Este es un mensaje de debug...")
@@ -7,9 +7,10 @@ const logger = require('./logger/loggers');
 
 function show_error(message) {
   try {
-    throw new Error(message)
+    throw new Error(message);
   } catch (error) {
-    logger.error(error.message)
+    logger.error(error.message);
   }
 }
-show_error('Este es un mensaje de error con try...')
+show_error("Este es un mensaje de error con try...");
+sdfdfsfsdeeee;
