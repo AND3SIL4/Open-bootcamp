@@ -37,3 +37,4 @@ console.log(nueva_lista);
 
 let propagacion = [...autores, ...titles];
 console.log(propagacion);
+
