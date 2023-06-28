@@ -1,0 +1,27 @@
+body{
+  display: flex;
+  gap: 20px;
+}
+.seccion{
+  width: 70rem;
+  background-color: darkslategrey;
+  padding: 1rem;
+  margin: 1rem;
+}
+.imagen{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img{
+  width: 30rem;
+}
+.parrafo{
+  padding: 1rem;
+  background-color: white;
+}
+
+.parrafo.draging{
+  opacity: 0.5;
+}
