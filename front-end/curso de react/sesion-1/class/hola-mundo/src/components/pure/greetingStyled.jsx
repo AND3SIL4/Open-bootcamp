@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 // ? estilo de usuario logueado
 const loggedStyle = {
   fontWeight: 'bold',
-  color: 'white'
+  color: 'black'
 }
 
 // ? estilo de usuario no logueado

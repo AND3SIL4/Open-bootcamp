@@ -26,6 +26,12 @@ const Ejemplo1 = () => {
    * Funcion para actualizar el estado privado que contiene el contador
    */
   const incrementarValor = () => {
+    /**
+    * * comentario importante
+    * ? comentario de ayuda
+    * TODO: comentario explicacion
+    * ! comentario resaltado
+    */
     setContador(contador + 1)
   }
 
@@ -55,3 +61,4 @@ const Ejemplo1 = () => {
 }
 
 export default Ejemplo1;
+
