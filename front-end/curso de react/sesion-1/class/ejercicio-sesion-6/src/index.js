@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// importar bootstrap
-import 'bootstrap/dist/css/bootstrap.css';
-// ! Estilos propios debajo de boostrap
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
