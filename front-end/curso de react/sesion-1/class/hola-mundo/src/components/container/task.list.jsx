@@ -38,10 +38,31 @@ const TaskListComponent = () => {
     };
   }, [tasks]);
 
-  const changeState = (id) => {
-    console.log("TODO: cambiar el estado de una tarea");
-  };
+  function completedTask(task) {
+    console.log('Complete this task: ', task);
+    const index = tasks.indexOf(task);
+    const tempTask = [...tasks]
+    tempTask[index].iscompleted = !tempTask[index].iscompleted;
+    // Actualizando el estado del componente lo cual actualiza la tarea
+    setTaks(tempTask)
+  }
 
+  function deleteTask(task) {
+    console.log('Task has been deleted', task);
+    const index = tasks.indexOf(task)
+    const tempTask = [...tasks]
+    tempTask.splice(index, 1)
+    setTaks(tempTask)
+  }
+
+  function addTask(task) {
+    console.log('Task added', task);
+    const index = tasks.indexOf(task)
+    const tempTask = [...tasks]
+    tempTask.push(task)
+    setTaks(tempTask)
+  }
+  
   return (
     <div>
       <div className="col-12">
@@ -66,16 +87,15 @@ const TaskListComponent = () => {
               <tbody>
                 {tasks.map((task, index) => {
                   return (
-                    <TaskComponent key={index} task={task}></TaskComponent>
+                    <TaskComponent key={index} task={task} complete={completedTask} remove={deleteTask}></TaskComponent>
                   )
                 })}
               </tbody>
             </table>
           </div>
-          <TaskForm></TaskForm>
         </div>
       </div>
-      {/* Aplicar un for/map para renderizar una lista */}
+      <TaskForm add={addTask}></TaskForm>
     </div>
   );
 };
